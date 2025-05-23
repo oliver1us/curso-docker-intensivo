@@ -81,7 +81,7 @@ El curso es **práctico y colaborativo**. Se combina teoría con ejercicios real
 
 Para más información o acceso al material del curso:
 
-- Correo: [tucorreo@ejemplo.com](mailto:jose.iriarte@dotqubits.com)
+- Correo: [jose.iriarte@dotqubits.com](mailto:jose.iriarte@dotqubits.com)
 - LinkedIn: [Jose Carlos Iriarte](https://linkedin.com/in/josecarlosiriarte)
 - Repositorio GitHub: [github.com/tunombre/docker-curso](https://github.com/tunombre/curso-docker-intensivo)
 
