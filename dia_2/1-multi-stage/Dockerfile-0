@@ -1,0 +1,25 @@
+FROM node:20-alpine
+
+# Establece el directorio de trabajo
+WORKDIR /app
+
+# Copia los archivos necesarios
+COPY package.json package-lock.json* ./
+
+# Instala dependencias
+RUN yarn install --frozen-lockfile
+
+# Copia el resto del código
+COPY . .
+
+# Construye el proyecto
+RUN yarn build
+
+# Instala un servidor estático para servir la app (opcional: serve o http-server)
+RUN yarn global add serve
+
+# Expone el puerto 3000 (puerto de serve por defecto)
+EXPOSE 3000
+
+# Comando para ejecutar la app
+CMD ["serve", "-s", "dist", "-l", "3000"]

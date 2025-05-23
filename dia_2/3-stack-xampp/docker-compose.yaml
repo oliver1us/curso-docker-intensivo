@@ -1,0 +1,32 @@
+services:
+  web:
+    image: php:8.2-apache
+    container_name: web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./www:/var/www/html
+
+  db:
+    image: mysql:5.7
+    container_name: db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: testdb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: userpass
+    ports:
+      - "3306:3306"
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.2.1
+    container_name: phpmyadmin_gui
+    restart: always
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: rootpass
+    ports:
+      - "8081:80"
+    depends_on:
+      - db
+
