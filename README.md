@@ -83,7 +83,7 @@ Para más información o acceso al material del curso:
 
 - Correo: [jose.iriarte@dotqubits.com](mailto:jose.iriarte@dotqubits.com)
 - LinkedIn: [Jose Carlos Iriarte](https://linkedin.com/in/josecarlosiriarte)
-- Repositorio GitHub: [github.com/tunombre/docker-curso](https://github.com/tunombre/curso-docker-intensivo)
+- Repositorio GitHub: [github.com/oliver1us/curso-docker-intensivo](https://github.com/oliver1us/curso-docker-intensivo)
 
 ---
 
