@@ -1,1 +1,11 @@
 *.zip
+node_modules
+*.log
+*.env
+venv/
+__pycache__/
+*.pyc
+.vscode/
+*backups/
+*db_data/
+*wp-data/
